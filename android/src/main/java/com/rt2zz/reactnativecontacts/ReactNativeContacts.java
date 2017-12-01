@@ -5,7 +5,6 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
-import com.facebook.react.bridge.JavaScriptModule;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,11 +20,6 @@ public class ReactNativeContacts implements ReactPackage {
 
         modules.add(new ContactsManager(reactContext));
         return modules;
-    }
-
-    @Override 
-    public List<Class<? extends JavaScriptModule>> createJSModules() { 
-        return Collections.emptyList(); 
     }
 
     @Override
